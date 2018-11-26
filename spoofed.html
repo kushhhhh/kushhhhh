@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Spoofed Website Project</title>
+</head>
+<style>
+body {
+background: black;
+color: white;
+font-family: Trebuchet MS;
+}
+</style>
+<body>
+<form name="login">
+<p id="username">
+Username<input type="text" name="userid"/> <br> </p>
+<p id="password">
+Password<input type="password" name="pswrd"/> <br> </p>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+<script language="javascript">
+function check(form) {
+if (form.userid.value === "user" && form.pswrd.value === "password") {
+   window.open('https://kushhhhh/thank-you.html')
+}
+else {
+   println("Error! Password or Username is incorrect... try again!")
+}
+}
+</script>
+</body>
+</html>
